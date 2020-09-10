@@ -14,18 +14,13 @@
 
     <TextView
         android:id="@+id/recyclerViewItemName"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        tools:text="name" />
+        android:textSize="36sp"
+        tools:text="tttt "
+        android:background="@color/colorAccent"
+        android:gravity="center"/>
 
-    <Button
-        android:id="@+id/recyclerViewItemButton"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:background="#000000"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_gravity="center_vertical"/>
+
 
 </LinearLayout>

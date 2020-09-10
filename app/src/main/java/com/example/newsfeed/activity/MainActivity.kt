@@ -1,7 +1,6 @@
 package com.example.newsfeed.activity
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -18,22 +17,14 @@ class MainActivity : AppCompatActivity() {
         val recyclerView: RecyclerView = feed
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = RecyclerViewAdapter(generateFakeValues())
-
-
     }
 
     private fun generateFakeValues(): List<String>{
         val values = mutableListOf<String>()
-        for (i in 0..100){
+        values.add("HEADER")
+        for (i in 1..100){
             values.add("$i element")
         }
         return values
-    }
-    fun btnGoToast(){
-        val text = "Hello toast!"
-        val duration = Toast.LENGTH_SHORT
-
-        val toast = Toast.makeText(applicationContext, text, duration)
-        toast.show()
     }
 }
