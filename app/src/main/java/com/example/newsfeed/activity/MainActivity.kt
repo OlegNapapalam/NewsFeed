@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         recyclerView.adapter = RecyclerViewAdapter(generateFakeValues())
     }
 
-    private fun generateFakeValues(): List<String>{
+    private fun generateFakeValues(): List<Any>{
         val values = mutableListOf<String>()
         values.add("HEADER")
         for (i in 1..100){

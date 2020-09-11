@@ -9,6 +9,7 @@
     android:paddingStart="16dp"
     android:paddingEnd="16dp"
     android:gravity="center_vertical"
+    android:background="@color/colorBackItem"
     android:orientation="horizontal">
 
 
@@ -17,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="36sp"
-        tools:text="tttt "
+        tools:text=" "
         android:background="@color/colorAccent"
         android:gravity="center"/>
 

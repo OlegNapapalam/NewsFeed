@@ -1,34 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="250dp"
-    android:gravity="center_vertical"
-    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"
     android:paddingStart="16dp"
-    android:paddingTop="8dp"
     android:paddingEnd="16dp"
-    android:paddingBottom="8dp">
+    android:gravity="center_vertical"
+    android:background="@color/colorBackItem"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:background="@color/colorBackItem">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/recyclerViewImagePromotion"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="200dp"
             tools:src="@drawable/promotion_one" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="72dp"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:orientation="horizontal">
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal"
+        android:background="@color/colorBackItem">
+
+        <Button
+            android:id="@+id/recyclerViewItemButton"
+            style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" />
+
         <TextView
             android:id="@+id/recyclerViewItemName"
             android:layout_width="wrap_content"
@@ -36,14 +49,6 @@
             android:textSize="20sp"
             tools:text="name" />
 
-        <Button
-            android:id="@+id/recyclerViewItemButton"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:background="#000000"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
-            />
     </LinearLayout>
 
 

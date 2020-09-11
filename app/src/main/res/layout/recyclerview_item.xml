@@ -3,14 +3,22 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="72dp"
-    android:paddingTop="8dp"
-    android:paddingBottom="8dp"
+    android:layout_height="wrap_content"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"
     android:paddingStart="16dp"
     android:paddingEnd="16dp"
     android:gravity="center_vertical"
+    android:background="@color/colorBackItem"
     android:orientation="horizontal">
 
+    <Button
+        android:id="@+id/recyclerViewItemButton"
+        style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp" />
 
     <TextView
         android:id="@+id/recyclerViewItemName"
@@ -19,13 +27,5 @@
         android:textSize="20sp"
         tools:text="name" />
 
-    <Button
-        android:id="@+id/recyclerViewItemButton"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:background="#000000"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_gravity="center_vertical"/>
 
 </LinearLayout>
